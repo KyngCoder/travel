@@ -5,7 +5,7 @@ import { services } from "../data.tsx";
 const Services = () => {
   return (
     <div className="wrapper" id="services">
-      <h2>Our Services</h2>
+      <h2 className="wrapper-h2">Our Services</h2>
       <div className="line"></div>
       <div className="cards">
         {services.map((item, key) => {

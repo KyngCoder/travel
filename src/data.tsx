@@ -85,56 +85,84 @@ export const destinations = [
     name: "Hawaii",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
     rating: 5,
-    price: 599
+    price: 599,
+    img:"",
+    genre:"top"
+    
+  },
+  {
+    name: "The Mediterranean",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    rating: 5,
+    price: 399,
+    img:"",
+    genre:"top"
+  },
+  {
+    name: "Central America",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    rating: 4,
+    price: 700,
+    img:"",
+    genre:"top"
+  },
+  {
+    name: "Mexico",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    rating: 5,
+    price: 275,
+    img:"",
+    genre:"top"
   },
   {
     name: "Hawaii",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
     rating: 5,
-    price: 599
+    price: 599,
+    img:"",
+    genre:"top"
   },
   {
-    name: "Hawaii",
+    name: "Northern Europe",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
     rating: 5,
-    price: 599
+    price: 495,
+    img:"",
+    genre:"top"
   },
   {
-    name: "Hawaii",
+    name: "New Zeland",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 599
+    rating: 3,
+    price: 300,
+    img:"",
+    genre:"top"
   },
   {
-    name: "Hawaii",
+    name: "South Africa",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
     rating: 5,
-    price: 599
+    price: 600,
+    img:"",
+    genre:"top"
   },
   {
-    name: "Hawaii",
+    name: "Indian Ocean",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
     rating: 5,
-    price: 599
+    price: 600,
+    img:"",
+    genre:"top"
   },
   {
-    name: "Hawaii",
+    name: "South Pacific",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
     rating: 5,
-    price: 599
+    price: 600,
+    img:"",
+    genre:"top"
   },
-  {
-    name: "Hawaii",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 599
-  },
-  {
-    name: "Hawaii",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 599
-  }
+  
 ]
 
 
@@ -209,6 +237,70 @@ export const text = [
       rating: 5
   },
 ]
+
+//gallery
+
+export const gallery = [
+  {
+    id:1,
+    source: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+    title:"Mexico",
+    subTitle:"Ocean",
+    description:"Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+
+  },
+  {
+    id:1,
+    source: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+    title:"Mexico",
+    subTitle:"Ocean",
+    description:"Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+  },
+  {
+    id:1,
+    source: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+      title:"Mexico",
+    subTitle:"Ocean",
+    description:"Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+  },
+  {
+    id:1,
+    source: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+      title:"Mexico",
+    subTitle:"Ocean",
+    description:"Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+  },
+  {
+    id:1,
+    source: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+      title:"Mexico",
+    subTitle:"Ocean",
+    description:"Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+  },
+  {
+    id:1,
+    source: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+      title:"Mexico",
+    subTitle:"Ocean",
+    description:"Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+  },
+  {
+    id:1,
+    source: "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+      title:"Mexico",
+    subTitle:"Ocean",
+    description:"Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat."
+  },
+]
+
+//blog
+
+export const blogs = [
+  {
+    title:"",
+  }
+]
+
 
 // contact
 
