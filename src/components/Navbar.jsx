@@ -39,7 +39,7 @@ const Navbar = () => {
           <Link to="/faq">FAQ</Link>
         </li>
         <li className={`${isFade ? " fade" : "nav-links"}`}>
-          <Link to="blog">Catamarans</Link>
+          <Link to="catamaran">Catamarans</Link>
         </li>
         <li className={`${isFade ? " fade" : "nav-links"}`}>
           <Link to="blog">Blogs</Link>

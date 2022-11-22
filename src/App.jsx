@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import Signin from "./components/Auth/Signin";
 import Signup from "./components/Auth/Signup";
 import ProtectedRoute from "./components/Auth/ProtectedRoute";
+import Catamaran from "./pages/Catamarans";
 
 
 
@@ -55,6 +56,15 @@ function App() {
           element={
             <ProtectedRoute>
               <Book />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          exact
+          path="/catamaran"
+          element={
+            <ProtectedRoute>
+              <Catamaran />
             </ProtectedRoute>
           }
         />
