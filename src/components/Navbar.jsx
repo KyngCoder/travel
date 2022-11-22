@@ -49,7 +49,7 @@ const Navbar = () => {
         </li>
        
         <li className={`${isFade ? " fade" : "nav-links"}`}>
-          <Link to="/registration">
+          <Link to="/Signup">
             <MdAccountCircle className="text-4xl" />
           </Link>
         </li>

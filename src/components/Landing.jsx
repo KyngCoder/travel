@@ -49,7 +49,7 @@ const Landing = () => {
           autoPlay
           muted
           loop
-          className="w-full h-full overflow-hidden object-cover -z-10 absolute top-0 left-0 "
+          className="w-full h-full brightness-90 overflow-hidden object-cover -z-10 absolute top-0 left-0 "
         />
       );
     } else {
@@ -59,7 +59,7 @@ const Landing = () => {
           autoPlay
           muted
           loop
-          className="w-full h-full overflow-hidden object-cover -z-10 absolute top-0 left-0 "
+          className="w-full brightness-50 h-full overflow-hidden object-cover -z-10 absolute top-0 left-0 "
         />
       );
     }

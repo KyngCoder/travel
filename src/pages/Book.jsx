@@ -10,6 +10,11 @@ export const Book = () => {
   const [departure,setDeparture] = useState("")
   const [arrival,setArrival] = useState("")
 
+  const book = (e) => {
+    e.preventDefault()
+    console.log({destination,boatType,charterType,amount,departure,arrival})
+  }
+
   return (
     <div div className="h-full w-screen bg-gray-900 overflow-hidden ">
       <h2 className="text-4xl font-bold pt-8 text-center text-blue-300 ">
@@ -53,7 +58,7 @@ export const Book = () => {
                 <ul
                   id="menu"
                   aria-hidden="true"
-                  className="bg-gray-900 text-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+                  className="bg-gray-900 z-20 text-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
   transition duration-150 ease-in-out origin-top min-w-32"
                 >
                   <li className="rounded-sm list relative px-3 py-1 hover:bg-blue-500">
@@ -82,41 +87,41 @@ export const Book = () => {
   min-w-32
   "
                     >
-                      <li className="px-3 py-1 list hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Athens')} className="px-3 py-1 list hover:bg-blue-500">
                         Athens
                       </li>
-                      <li className="rounded-sm list relative px-3 py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Cyclades')} className="rounded-sm list relative px-3 py-1 hover:bg-blue-500">
                         Cyclades
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Mykonos')} className="px-3 list py-1 hover:bg-blue-500">
                         Mykonos
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Santorini')} className="px-3 list py-1 hover:bg-blue-500">
                         Santorini
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Dodecanese')} className="px-3 list py-1 hover:bg-blue-500">
                         Dodecanese
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">Kos</li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Kos')} className="px-3 list py-1 hover:bg-blue-500">Kos</li>
+                      <li onClick={()=>setDestination('Rhodes')} className="px-3 list py-1 hover:bg-blue-500">
                         Rhodes
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Samos')} className="px-3 list py-1 hover:bg-blue-500">
                         Samos
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Ionian')} className="px-3 list py-1 hover:bg-blue-500">
                         Ionian
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Lefkas')} className="px-3 list py-1 hover:bg-blue-500">
                         Lefkas
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Sporades')} className="px-3 list py-1 hover:bg-blue-500">
                         Sporades
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Volos')} className="px-3 list py-1 hover:bg-blue-500">
                         Volos
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Skiathos')} className="px-3 list py-1 hover:bg-blue-500">
                         Skiathos
                       </li>
                     </ul>
@@ -148,16 +153,16 @@ export const Book = () => {
   min-w-32
   "
                     >
-                      <li className="px-3 py-1 list hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Sicily')} className="px-3 py-1 list hover:bg-blue-500">
                         Sicily
                       </li>
-                      <li className="px-3 py-1 list hover:bg-blue-500">
-                        Ligurai
+                      <li  onClick={()=>setDestination("Liguria")}  className="px-3 py-1 list hover:bg-blue-500">
+                        Liguria
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Sardinia')} className="px-3 list py-1 hover:bg-blue-500">
                         Sardinia
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Tyrrhenian Sea')} className="px-3 list py-1 hover:bg-blue-500">
                         Tyrrhenian Sea
                       </li>
                     </ul>
@@ -188,22 +193,22 @@ export const Book = () => {
   min-w-32
   "
                     >
-                      <li className="px-3 py-1 list hover:bg-blue-500">
+                      <li  onClick={()=>setDestination('Dubrovnik')}  className="px-3 py-1 list hover:bg-blue-500">
                         Dubrovnik
                       </li>
-                      <li className="px-3 py-1 list hover:bg-blue-500">
+                      <li  onClick={()=>setDestination('Istra')}  className="px-3 py-1 list hover:bg-blue-500">
                         Istra
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Kvarner')} className="px-3 list py-1 hover:bg-blue-500">
                         Kvarner
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Sibenik')} className="px-3 list py-1 hover:bg-blue-500">
                         Sibenik
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Split')} className="px-3 list py-1 hover:bg-blue-500">
                         Split
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('Zadar')} className="px-3 list py-1 hover:bg-blue-500">
                         Zadar
                       </li>
                     </ul>
@@ -235,36 +240,34 @@ export const Book = () => {
   min-w-32
   "
                     >
-                      <li className="px-3 py-1 list hover:bg-blue-500">
+                      <li  onClick={()=>setDestination('Bahamas')}  className="px-3 py-1 list hover:bg-blue-500">
                         Bahamas
                       </li>
-                      <li className="px-3 py-1 list hover:bg-blue-500">
-                        Python
-                      </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                    
+                      <li onClick={()=>setDestination('Jamaica')} className="px-3 list py-1 hover:bg-blue-500">
                         Jamaica
                       </li>
-                      <li className="px-3 list py-1 hover:bg-blue-500">
+                      <li onClick={()=>setDestination('British Virgin Island')} className="px-3 list py-1 hover:bg-blue-500">
                         British Virgin Island
                       </li>
                     </ul>
                   </li>
 
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li   onClick={()=>setDestination('Norway')}  className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     Norway
                   </li>
 
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li  onClick={()=>setDestination('Mauritius')}  className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     Mauritius
                   </li>
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li  onClick={()=>setDestination('Maldives')}  className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     Maldives
                   </li>
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li  onClick={()=>setDestination('Baleric Island')}  className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     Baleric Island
                   </li>
 
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li onClick={()=>setDestination('United States Virgin Island')} className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     United States Virgin Island
                   </li>
                 </ul>
@@ -288,7 +291,7 @@ export const Book = () => {
                   <span className="flex  justify-between">{boatType}</span>
                   <span>
                     <svg
-                      className="fill-current h-4 w-4 transform group-hover:-rotate-180
+                      className="fill-current -z-50 h-4 w-4 transform group-hover:-rotate-180
         transition duration-150 ease-in-out"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
@@ -303,11 +306,11 @@ export const Book = () => {
                   className="bg-gray-900 text-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
   transition duration-150 ease-in-out origin-top min-w-32"
                 >
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li onClick={()=>setBoatType('Catamaran')} className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     Catamaran
                   </li>
 
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li onClick={()=>setBoatType('Yacht')} className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     Yacht
                   </li>
                 </ul>
@@ -350,11 +353,11 @@ export const Book = () => {
                   className="bg-gray-900 text-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
   transition duration-150 ease-in-out origin-top min-w-32"
                 >
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li onClick={()=>setCharterType('Bareboat')} className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     Bareboat
                   </li>
 
-                  <li className="rounded-sm px-3 list py-1 hover:bg-blue-500">
+                  <li onClick={()=>setCharterType('Skippered')} className="rounded-sm px-3 list py-1 hover:bg-blue-500">
                     Skippered
                   </li>
                 </ul>
@@ -373,6 +376,8 @@ export const Book = () => {
                 id="username"
                 type="number"
                 placeholder="1"
+                value={amount}
+                onChange={(event)=>setAmount(event.target.value)}
               />
             </div>
 
@@ -408,12 +413,12 @@ export const Book = () => {
             </div>
             
             <div className="flex justify-center">
-              <button className="px-4 bg-blue-500 rounded-md text-lg text-white py-2">
+              <button onClick={book} className="px-4 bg-blue-500 rounded-md text-lg text-white py-2">
                 Book Now
               </button>
             </div>
           </form>
-          <p class="text-center text-gray-500 text-xs">
+          <p className="text-center text-gray-500 text-xs">
             &copy;2022 Traveltheparadise. All rights reserved.
           </p>
         </div>
