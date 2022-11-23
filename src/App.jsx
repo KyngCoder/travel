@@ -12,6 +12,7 @@ import Signin from "./components/Auth/Signin";
 import Signup from "./components/Auth/Signup";
 import ProtectedRoute from "./components/Auth/ProtectedRoute";
 import Catamaran from "./pages/Catamarans";
+import Info from "./pages/Info";
 
 
 
@@ -20,9 +21,10 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/Signin" element={<Signin />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Signup" element={<Signup />} />
+        <Route exact path="/Signin" element={<Signin />} />
+        <Route path="/info" exact element={<Info />} />
         <Route
           exact
           path="destination"

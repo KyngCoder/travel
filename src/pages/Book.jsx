@@ -1,62 +1,44 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
-import book from "../assets/img/book.png";
+import { db } from "../firebase";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 
-import emailjs from "@emailjs/browser";
+import { UserAuth } from '../context/AuthContext';
 
 export const Book = () => {
 
+  
 
-  const [destination,setDestination] = useState('')
-  const [boatType,setBoatType] = useState('')
-  const [charterType,setCharterType] = useState('')
-  const [departure,setDeparture] = useState('')
-  const [arrival,setArrival] = useState('')
-  const [amount,seAmount] = useState(1)
+  const [destination,setDestination] = useState('country')
+  const [boatType,setBoatType] = useState('yacht')
+  const [charterType,setCharterType] = useState('charter type')
+  const [telephone,setTelephone] = useState('')
+  const [email,setEmail] = useState('')
+  const [amount,setAmount] = useState(1)
+  const [name,setName] = useState('')
+  const usersCollectionRef = collection(db, "bookings");
 
-  const [ formData, setFormData ] = useState({
-    from_name:" ",
-    message: {destination},
-    num:{amount},
-    boat_type:{boatType},
-    charter_type:{charterType},
-    departure:{departure},
-    arrival:{arrival},
-    reply_to:" "
-  });
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    console.log(e.target)
-
-    emailjs
-      .sendForm(
-        "service_4yco5an",
-        "template_0o9ms0f",
-        {
-          from_name:" ",
-          message: {destination},
-          num:{amount},
-          boat_type:{boatType},
-          charter_type:{charterType},
-          departure:{departure},
-          arrival:{arrival},
-          reply_to:" "
-        },
-        "mke_Sx2NV8kYtMBOD",
-      )
-      .then(
-        (result) => {
-        alert('success')
-        },
-        (error) => {
-       console.log(error)
-        }
-      );
-  };
-
-  const handleChange = (e) => setFormData({...formData, [e.target.name]: e.target.value})
+  const {createBooking} = UserAuth()
+ 
+  const addBookings = (e) => {
+    e.preventDefault()
+    console.log(telephone)
+    createBooking(usersCollectionRef,{destination: destination,boatType:boatType,charterType:charterType,telephone:telephone,email:email,amount:Number(amount),name: name})
+    setName(' ')
+    setTelephone(' ')
+    setDestination(' ')
+    setCharterType(' ')
+    setBoatType(' ')
+    setAmount(' ')
+    setEmail(' ')
+  }
 
   return (
     <div div className="h-full w-screen bg-gray-900 overflow-hidden ">
@@ -71,7 +53,7 @@ export const Book = () => {
           />
         </div>
         <div className="w-full max-w-xs m-8 mb-0 lg:mt-0">
-          <form onSubmit={sendEmail} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <form  className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
@@ -372,9 +354,9 @@ export const Book = () => {
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="username"
                 type="text"
-                placeholder="Where to?"
+                placeholder="Enter Name"
                 name="from_name"
-                onChange={handleChange}
+                onChange={(e)=>setName(e.target.value)}
               />
             </div>
 </div>
@@ -440,7 +422,7 @@ export const Book = () => {
                 type="number"
                 placeholder="1"
                 name="num"
-                onChange={handleChange}
+                onChange={(e)=>setAmount(e.target.value)}
               />
             </div>
 
@@ -451,15 +433,15 @@ export const Book = () => {
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="username"
               >
-                Departure
+                Phone NO.
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="username"
-                type="Date"
-                placeholder="Where to?"
+                type="tel"
+                placeholder="Enter #"
                 name="departure"
-                onChange={handleChange}
+                onChange={(e)=>setTelephone(e.target.value)}
               />
             </div>
             <div className="mb-4">
@@ -467,20 +449,20 @@ export const Book = () => {
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="username"
               >
-                Arrival
+                Email
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="username"
-                type="date"
-                placeholder="Where to?"
-                name="arrival"
-                onChange={handleChange}
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                onChange={(e)=>setEmail(e.target.value)}
               />
             </div>
             
             <div className="flex justify-center">
-              <button type="submit" onClick={sendEmail} className="px-4 bg-blue-500 rounded-md text-lg text-white py-2">
+              <button type="submit" onClick={addBookings} className="px-4 bg-blue-500 rounded-md text-lg text-white py-2">
                 Book Now
               </button>
             </div>
@@ -490,6 +472,7 @@ export const Book = () => {
           </p>
         </div>
       </section>
+    
     </div>
   );
 };
