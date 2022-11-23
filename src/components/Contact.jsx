@@ -1,6 +1,40 @@
-import React from 'react'
+import React,{useState} from 'react'
+
+
+
+
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+
+  const [ formData, setFormData ] = useState({
+    from_name:" ",
+    message: '',
+    reply_to:" "
+  });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_4yco5an",
+        "template_7kz2djf",
+        e.target,
+        "mke_Sx2NV8kYtMBOD",
+      )
+      .then(
+        (result) => {
+        alert('success')
+        },
+        (error) => {
+       console.log(error)
+        }
+      );
+  };
+
+  const handleChange = (e) => setFormData({...formData, [e.target.name]: e.target.value})
+
   return (
   
 <section className="relative z-10 overflow-hidden bg-black text-white py-20 lg:py-[120px] px-16">
@@ -86,19 +120,23 @@ const Contact = () => {
             </div>
             <div className="w-full">
               <h4 className="text-dark mb-1 text-xl font-bold">Email Address</h4>
-              <p className="text-body-color text-base">info@yourdomain.com</p>
+              <p className="text-body-color text-base">info@travelthepradise</p>
             </div>
           </div>
         </div>
       </div>
       <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
         <div className="relative rounded-lg bg-gray-900 text-black p-8 shadow-lg sm:p-12">
-          <form>
+          <form
+          onSubmit={sendEmail} 
+          >
             <div className="mb-6">
               <input
                 type="text"
                 placeholder="Your Name"
                 className="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
+                onChange={handleChange}
+                name="from_name"
               />
             </div>
             <div className="mb-6">
@@ -106,6 +144,8 @@ const Contact = () => {
                 type="email"
                 placeholder="Your Email"
                 className="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
+                onChange={handleChange}
+                name="reply_to"
               />
             </div>
             <div className="mb-6">
@@ -113,6 +153,8 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Phone"
                 className="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
+                onChange={handleChange}
+                name="phone"
               />
             </div>
             <div className="mb-6">
@@ -120,6 +162,8 @@ const Contact = () => {
                 rows="6"
                 placeholder="Your Message"
                 className="text-body-color border-[f0f0f0] focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
+                onChange={handleChange}
+                name="message"
               ></textarea>
             </div>
             <div>
@@ -141,8 +185,8 @@ const Contact = () => {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
                   fill="#3056D3"
                 />

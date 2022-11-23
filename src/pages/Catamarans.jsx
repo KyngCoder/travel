@@ -4,9 +4,12 @@ import { MdLocationPin, MdStar } from "react-icons/md";
 
 import p1 from "../assets/img/p-1.jpg";
 
+import {FiClock, FiCheck} from 'react-icons/fi'
+
 //get data
 
 import { catamaran } from "../data";
+import { Link } from "react-router-dom";
 
 const Catamaran = () => {
   const stars = (num) => {
@@ -61,48 +64,39 @@ const Catamaran = () => {
   };
 
   return (
-    <div className="px-8 bg-blue-300 pt-24 pb-4" >
-      <h2 className="wrapper-h2">Catamarans</h2>
+    <div className="px-8 bg-blue-300 pt-24 pb-4">
+      <h2 className="wrapper-h2 text-[30px] md:text-[60px]">Catamarans</h2>
       <div className="line"></div>
-      <div className=" h-full w-screen  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pr-20 gap-2">
+      <div className="flex-col space-y-4 h-full w-screen  md:grid grid-cols-1 xl:grid-cols-2   pr-20 gap-2">
         {catamaran.map((info, key) => {
           return (
-            <div
-              key={`${info.name} ${key}`}
-              className="w-full max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 text-white"
-            >
-              <a href="#">
-                <img
-                  className="p-8 rounded-t-lg"
-                  src={info.img}
-                  alt="product image"
-                />
-              </a>
-              <div className="px-5 pb-5">
-                <a href="#" className="flex items-center space-x-1">
-                  <MdLocationPin />
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    {info.name}
-                  </h5>
-                </a>
-                <p>{info.description}</p>
-                <div className="flex items-center mt-2.5 mb-5">
-                  {stars(info.rating)}
-
-                  <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                    {`${info.rating}.0`}
-                  </span>
+            <div className="flex bg-white p-4 rounded-md space-x-4">
+              <div>
+                {" "}
+                <img src={info.img} className="max-h-[300px] max-w-[200px] md:max-w-[350px] " />
+              </div>
+              <div className="text-lg">
+                <h3 className="font-medium pb-1 md:pb-4 text-md md:text-2xl">{info.name}</h3>
+                <p className="pb-1 md:pb-4">
+                    {stars(3)}
+                </p>
+                <div className="flex items-center pb-1 md:pb-4 space-x-1">
+                 <FiClock />
+                  <p>{info.time} hours</p>
+                </div>
+                <div className="flex items-center space-x-1 pb-1 md:pb-4">
+                  <FiCheck />
+                  <p>Free Cancellation</p>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                    {info.price}
-                  </span>
-                  <a
-                    href="#"
+                    <p>${info.price}</p>
+
+                    <Link
+                    to="/book"
                     className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Book Seat
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

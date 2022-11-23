@@ -9,7 +9,7 @@ const Footer = () => {
               <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
                 <div>
                   <p className="font-medium tracking-wide text-gray-300">
-                    Category
+                    Locations
                   </p>
                   <ul className="mt-2 space-y-2">
                     <li>
@@ -17,7 +17,7 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        News
+                      Athens
                       </a>
                     </li>
                     <li>
@@ -25,7 +25,7 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        World
+                        Italy
                       </a>
                     </li>
                     <li>
@@ -33,7 +33,7 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        Games
+                        Croatia
                       </a>
                     </li>
                     <li>
@@ -41,20 +41,20 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        References
+                       Greece
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <p className="font-medium tracking-wide text-gray-300">Apples</p>
+                  <p className="font-medium tracking-wide text-gray-300">Quick Links</p>
                   <ul className="mt-2 space-y-2">
                     <li>
                       <a
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        Web
+                        About us
                       </a>
                     </li>
                     <li>
@@ -62,7 +62,7 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        eCommerce
+                        Contact Us
                       </a>
                     </li>
                     <li>
@@ -70,7 +70,7 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        Business
+                        Privacy Policy
                       </a>
                     </li>
                     <li>
@@ -78,7 +78,7 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        Entertainment
+                       Term & condition
                       </a>
                     </li>
                     <li>
@@ -86,20 +86,20 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        Portfolio
+                        Bookings
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div>
-                  <p className="font-medium tracking-wide text-gray-300">Cherry</p>
+                  <p className="font-medium tracking-wide text-gray-300">Contact</p>
                   <ul className="mt-2 space-y-2">
                     <li>
                       <a
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        Media
+                        info@travelpradise.com
                       </a>
                     </li>
                     <li>
@@ -107,7 +107,7 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        Brochure
+                        000357-96889730
                       </a>
                     </li>
                     <li>
@@ -115,25 +115,11 @@ const Footer = () => {
                         href="/"
                         className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
                       >
-                        Nonprofit
+                       0091-9988752275
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="/"
-                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
-                      >
-                        Educational
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
-                      >
-                        Projects
-                      </a>
-                    </li>
+                   
+                   
                   </ul>
                 </div>
                 <div>
@@ -195,8 +181,9 @@ const Footer = () => {
                   </button>
                 </form>
                 <p className="mt-4 text-sm text-gray-500">
-                  Bacon ipsum dolor amet short ribs pig sausage prosciuto chicken
-                  spare ribs salami.
+                 
+
+We are people who are well-versed in the fun and rigors of traveling. Our travel agency came together to help other people plan and book their dream vacations.
                 </p>
               </div>
             </div>

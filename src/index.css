@@ -21,7 +21,6 @@
     font-family: poppins;
     font-weight: bold;
     text-align: center;
-    font-size: 60px;
     color: #fff;
     margin: 0;
   }
@@ -93,11 +92,13 @@
       width: 95%;
       margin-bottom: 30px;
     }
-    .wrapper h2 {
-      font-size: 30px;
-    }
+   
   }
   
+
+
+
+
   .cards {
     display: flex;
     justify-content: space-between;

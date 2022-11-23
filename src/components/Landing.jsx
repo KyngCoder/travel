@@ -7,7 +7,7 @@ import vid5 from "../assets/travel-4.mp4";
 
 const Landing = () => {
   const [num, setNum] = useState(1);
-  console.log(typeof `vid${num}`);
+
 
   const renderVideo = () => {
     if (num === 1) {
@@ -102,7 +102,7 @@ const Landing = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center h-4/5 px-8">
-        <h2 className=" text-6xl pb-4 text-center text-white font-bold">We make dreams come true!!</h2>
+        <h2 className=" text-6xl pb-4 text-center text-white font-bold">We do the planning for you</h2>
         <p className=" text-xl text-center text-white font-bold pb-4">Let us transport you with our highly affordable and reliable holiday packages</p>
         <button className="bg-blue-500  rounded-md text-white text-2xl font-semibold mt-4 py-4 px-6">Discover More </button>
         </div>

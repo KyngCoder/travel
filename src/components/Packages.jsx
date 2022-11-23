@@ -1,6 +1,7 @@
 import React from "react";
 
 import { MdLocationPin, MdStar } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 import p1 from "../assets/img/p-1.jpg";
 
@@ -62,9 +63,9 @@ const Packages = () => {
 
   return (
     <div className="px-8 bg-blue-300 py-4" >
-      <h2 className="wrapper-h2">Top Destinations</h2>
+      <h2 className="wrapper-h2 text-[30px] md:text-[60px]">Top Destinations</h2>
       <div className="line"></div>
-      <div className=" h-full w-screen  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pr-20 gap-2">
+      <div className=" h-full w-screen place-items-center md:place-items-start  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pr-20 gap-2">
         {destinations.map((info, key) => {
           return (
             <div
@@ -95,14 +96,14 @@ const Packages = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                    {info.price}
+                    ${info.price}
                   </span>
-                  <a
-                    href="#"
+                  <Link
+                  to="/book"
                     className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   >
                     Book Seat
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -2,18 +2,61 @@ import React, { useState } from "react";
 
 import book from "../assets/img/book.png";
 
-export const Book = () => {
-  const [destination, setDestination] = useState("Country");
-  const [boatType, setBoatType] = useState("Boat Type");
-  const [charterType,setCharterType] = useState('Charter type')
-  const [amount,setAmount] = useState(1)
-  const [departure,setDeparture] = useState("")
-  const [arrival,setArrival] = useState("")
+import emailjs from "@emailjs/browser";
 
-  const book = (e) => {
-    e.preventDefault()
-    console.log({destination,boatType,charterType,amount,departure,arrival})
-  }
+export const Book = () => {
+
+
+  const [destination,setDestination] = useState('')
+  const [boatType,setBoatType] = useState('')
+  const [charterType,setCharterType] = useState('')
+  const [departure,setDeparture] = useState('')
+  const [arrival,setArrival] = useState('')
+  const [amount,seAmount] = useState(1)
+
+  const [ formData, setFormData ] = useState({
+    from_name:" ",
+    message: {destination},
+    num:{amount},
+    boat_type:{boatType},
+    charter_type:{charterType},
+    departure:{departure},
+    arrival:{arrival},
+    reply_to:" "
+  });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    console.log(e.target)
+
+    emailjs
+      .sendForm(
+        "service_4yco5an",
+        "template_0o9ms0f",
+        {
+          from_name:" ",
+          message: {destination},
+          num:{amount},
+          boat_type:{boatType},
+          charter_type:{charterType},
+          departure:{departure},
+          arrival:{arrival},
+          reply_to:" "
+        },
+        "mke_Sx2NV8kYtMBOD",
+      )
+      .then(
+        (result) => {
+        alert('success')
+        },
+        (error) => {
+       console.log(error)
+        }
+      );
+  };
+
+  const handleChange = (e) => setFormData({...formData, [e.target.name]: e.target.value})
 
   return (
     <div div className="h-full w-screen bg-gray-900 overflow-hidden ">
@@ -28,7 +71,7 @@ export const Book = () => {
           />
         </div>
         <div className="w-full max-w-xs m-8 mb-0 lg:mt-0">
-          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <form onSubmit={sendEmail} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
@@ -273,8 +316,9 @@ export const Book = () => {
                 </ul>
               </div>
             </div>
+<div className="flex justify-between">
 
-            <div className="mb-4">
+<div className="mb-4">
               <label
                 className="block text-gray-700 text-sm font-bold mb-2"
                 htmlFor="username"
@@ -316,6 +360,25 @@ export const Book = () => {
                 </ul>
               </div>
             </div>
+
+<div className="mb-4 w-28">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="username"
+              >
+                Name
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="username"
+                type="text"
+                placeholder="Where to?"
+                name="from_name"
+                onChange={handleChange}
+              />
+            </div>
+</div>
+            
 
             <div className="flex justify-between">
 
@@ -376,8 +439,8 @@ export const Book = () => {
                 id="username"
                 type="number"
                 placeholder="1"
-                value={amount}
-                onChange={(event)=>setAmount(event.target.value)}
+                name="num"
+                onChange={handleChange}
               />
             </div>
 
@@ -395,6 +458,8 @@ export const Book = () => {
                 id="username"
                 type="Date"
                 placeholder="Where to?"
+                name="departure"
+                onChange={handleChange}
               />
             </div>
             <div className="mb-4">
@@ -409,11 +474,13 @@ export const Book = () => {
                 id="username"
                 type="date"
                 placeholder="Where to?"
+                name="arrival"
+                onChange={handleChange}
               />
             </div>
             
             <div className="flex justify-center">
-              <button onClick={book} className="px-4 bg-blue-500 rounded-md text-lg text-white py-2">
+              <button type="submit" onClick={sendEmail} className="px-4 bg-blue-500 rounded-md text-lg text-white py-2">
                 Book Now
               </button>
             </div>

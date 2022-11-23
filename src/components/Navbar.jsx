@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/img/travel-logo.png";
-import { GiShipWheel } from "react-icons/gi";
+
 import { MdAccountCircle, MdAddCall } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -41,16 +41,15 @@ const Navbar = () => {
         <li className={`${isFade ? " fade" : "nav-links"}`}>
           <Link to="catamaran">Catamarans</Link>
         </li>
-        <li className={`${isFade ? " fade" : "nav-links"}`}>
-          <Link to="blog">Blogs</Link>
-        </li>
+        
         <li className={`${isFade ? " fade" : "nav-links"}`}>
           <Link to="/contact">Contact Us</Link>
         </li>
        
         <li className={`${isFade ? " fade" : "nav-links"}`}>
-          <Link to="/Signup">
-            <MdAccountCircle className="text-4xl" />
+          <Link to="/Signup" className="relative flex-col  ">
+            <MdAccountCircle className="text-4xl  " />
+
           </Link>
         </li>
 

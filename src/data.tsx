@@ -82,95 +82,48 @@ export const brands = [
 
 export const destinations = [
   {
-    name: "Hawaii",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "Lefkas",
     rating: 5,
-    price: 599,
-    img: " https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 ",
-    genre: "top",
+    price: 99,
+    img: "https://images.unsplash.com/photo-1634060253542-ccfa41801c18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+    
   },
   {
-    name: "The Mediterranean",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "Paros",
     rating: 5,
-    price: 399,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 192.78,
+    img: "https://images.unsplash.com/photo-1604005495286-fd5e677dea20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    
   },
   {
-    name: "Central America",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 4,
-    price: 700,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
-  {
-    name: "Mexico",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "United Kingdom",
     rating: 5,
-    price: 275,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 129,
+    img: "https://images.unsplash.com/photo-1482685945432-29a7abf2f466?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80",
+    
   },
   {
-    name: "Hawaii",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "British Virgin Island",
     rating: 5,
-    price: 599,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 50,
+    img: "https://images.unsplash.com/photo-1622581646489-6066b5c697e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    
   },
   {
-    name: "Northern Europe",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "Norway",
     rating: 5,
-    price: 495,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 165,
+    img: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    
   },
   {
-    name: "New Zeland",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 3,
-    price: 300,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
-  {
-    name: "South Africa",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "Bahamas",
     rating: 5,
-    price: 600,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 75,
+    img: "https://images.unsplash.com/photo-1615839901889-c828c4a96c15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1290&q=80",
+    
   },
-  {
-    name: "Indian Ocean",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 600,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
-  {
-    name: "South Pacific",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 600,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
+
 ];
 
 export const packages = [
@@ -245,42 +198,103 @@ export const packages = [
     ],
     Italy:[
       {
-        name:"",
-        img:"",
+        name:"Sicily",
+        img:"https://images.pexels.com/photos/3754810/pexels-photo-3754810.jpeg?auto=compress&cs=tinysrgb&w=600",
         price:259,
       },
       {
-        name:"",
-        img:"",
+        name:"Liguria",
+        img:"https://images.pexels.com/photos/632522/pexels-photo-632522.jpeg?auto=compress&cs=tinysrgb&w=600",
         price:259,
       },
       {
-        name:"",
-        img:"",
+        name:"Sardinia",
+        img:"https://images.pexels.com/photos/3944006/pexels-photo-3944006.jpeg?auto=compress&cs=tinysrgb&w=600",
         price:259,
       },
       {
-        name:"",
-        img:"",
+        name:"Tyrrhenian sea",
+        img:"https://images.pexels.com/photos/4783647/pexels-photo-4783647.jpeg?auto=compress&cs=tinysrgb&w=600",
         price:259,
       },
     ],
     Caribbean:[
       {
-        name:"",
-        img:"",
+        name:"British Virgin Island",
+        img:"https://images.unsplash.com/photo-1624468055971-249e31e54e4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80",
         price:259,
       },
       {
-        name:"",
-        img:"",
+        name:"Bahamas",
+        img:"https://images.unsplash.com/photo-1589786161184-6d43d20526e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
         price:259,
       },
       {
-        name:"",
-        img:"",
+        name:"Jamaica",
+        img:"https://images.unsplash.com/photo-1542356670-0366c7cd7ebc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
         price:259,
       }
+    ],
+    Croatia:[
+      {
+        name:"Dubrovnik",
+        img:"https://images.pexels.com/photos/4353632/pexels-photo-4353632.jpeg?auto=compress&cs=tinysrgb&w=600",
+        price:125
+      },
+      {
+        name:"Istra",
+        img:"https://images.unsplash.com/photo-1610977695392-8fdd684af1a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        price:125
+      },
+      {
+        name:"Kvarner",
+        img:"https://images.unsplash.com/photo-1649522326123-eb7939740c76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        price:125
+      },
+      {
+        name:"Sibenik",
+        img:"https://images.pexels.com/photos/13385470/pexels-photo-13385470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        price:125
+      },
+      {
+        name:"Split",
+        img:"https://images.unsplash.com/photo-1555990538-c48ab0a194b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+        price:125
+      },
+      {
+        name:"Zadar",
+        img:"https://images.unsplash.com/photo-1504268886417-6e7cd7617cf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1224&q=80",
+        price:125
+      },
+      
+    ],
+    others:[
+      {
+        name:"Norway",
+        img:"https://images.unsplash.com/photo-1552594270-b95bee9a6a33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1798&q=80",
+        price:"225.33",
+      },
+      {
+        name:"Mauritius",
+        img:"https://images.pexels.com/photos/3703465/pexels-photo-3703465.jpeg?auto=compress&cs=tinysrgb&w=600",
+        price:"225.33",
+      },
+      {
+        name:"British Virgin Island",
+        img:"https://images.unsplash.com/photo-1504659728239-b005b35c5d69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        price:"225.33",
+      },
+      {
+        name:"Maldives",
+        img:"https://images.unsplash.com/photo-1573843981267-be1999ff37cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        price:"225.33",
+      },
+      {
+        name:"Baleric Island",
+        img:"https://images.unsplash.com/photo-1533417457911-4ec911485388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        price:"225.33",
+      },
+      
     ]
   },
 ]},
@@ -375,52 +389,24 @@ export const gallery = [
     source:
       "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Machu Pichu",
-    subTitle: "Cusco Peru",
     description:
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
   },
-  {
-    id: 2,
-    source:
-      "https://images.pexels.com/photos/2549018/pexels-photo-2549018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "",
-    subTitle: "",
-    description:
-      "",
-  },
-  {
-    id: 3,
-    source:
-      "https://images.pexels.com/photos/3889991/pexels-photo-3889991.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "",
-    subTitle: "",
-    description:
-      "",
-  },
+ 
   {
     id: 4,
     source:
       "https://images.unsplash.com/photo-1530225029356-e301a685e6b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     title: "Dunns River Falls",
-    subTitle: "",
     description:
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
   },
-  {
-    id: 5,
-    source:
-      "",
-    title: "",
-    subTitle: "",
-    description:
-      "",
-  },
+ 
   {
     id: 6,
     source:
       "https://images.unsplash.com/photo-1472431983446-df737cd5b8bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     title: "Mexico",
-    subTitle: "Ocean",
     description:
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
   },
@@ -429,7 +415,6 @@ export const gallery = [
     source:
       "https://images.unsplash.com/photo-1548574505-5e239809ee19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1264&q=80",
     title: "Bahamas",
-    subTitle: "",
     description:
       "Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.",
   },
@@ -448,93 +433,38 @@ export const blogs = [
 
 export const catamaran = [
   {
-    name: "Hawaii",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 599,
-    img: " https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 ",
-    genre: "top",
-  },
-  {
-    name: "The Mediterranean",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 399,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
-  {
-    name: "Central America",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "Blue Lagoon, Beaches and Bays Catamaran Sailing Tour",
     rating: 4,
-    price: 700,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 50.67,
+    img: " https://media.tacdn.com/media/attractions-splice-spp-360x240/0b/22/2c/d6.jpg ",
+    time: "5"
   },
   {
-    name: "Mexico",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "Santorini Luxury Caldera Cruise",
+    rating: 4,
+    price: 146,
+    img: " https://media.tacdn.com/media/attractions-splice-spp-360x240/07/0d/dd/56.jpg",
+    time: "5"
+  },
+  {
+    name: "Sunset Jazz Cruise in Barcelona",
     rating: 5,
-    price: 275,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 25,
+    img: "https://media.tacdn.com/media/attractions-splice-spp-360x240/0b/79/a4/9a.jpg",
+    time: "2"
   },
   {
-    name: "Hawaii",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "Exclusive Catamaran Cruise in Santorini",
     rating: 5,
-    price: 599,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 124.95,
+    img: "https://media.tacdn.com/media/attractions-splice-spp-360x240/0b/b7/20/85.jpg",
+    time: "5"
   },
   {
-    name: "Northern Europe",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
+    name: "Private Santorini Catamaran Cruise",
     rating: 5,
-    price: 495,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
-  {
-    name: "New Zeland",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 3,
-    price: 300,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
-  {
-    name: "South Africa",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 600,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
-  {
-    name: "Indian Ocean",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 600,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
-  },
-  {
-    name: "South Pacific",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro omnis ipsum deleniti iste.",
-    rating: 5,
-    price: 600,
-    img: "https://images.unsplash.com/photo-1579144955436-706cc4f0e70a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-    genre: "top",
+    price: 150.95,
+    img: "https://media.tacdn.com/media/attractions-splice-spp-360x240/0b/84/a9/95.jpg",
+    time: "5"
   },
 ];
