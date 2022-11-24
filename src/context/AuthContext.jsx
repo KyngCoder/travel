@@ -62,12 +62,16 @@ useEffect(()=>{
 
   getBookings()
 
-},[])
+},[user])
 
- 
+const deleteUser = async (id) => {
+  const userDoc = doc(db, "bookings", id);
+  await deleteDoc(userDoc);
+};
+
   return (
     <UserContext.Provider
-      value={{ createUser, user, logout, signIn, bookings, createBooking }}
+      value={{ createUser, user, logout, signIn, bookings, createBooking, deleteUser }}
     >
       {children}
     </UserContext.Provider>

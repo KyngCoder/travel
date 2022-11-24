@@ -33,9 +33,9 @@ export const Book = () => {
     createBooking(usersCollectionRef,{destination: destination,boatType:boatType,charterType:charterType,telephone:telephone,email:email,amount:Number(amount),name: name})
     setName(' ')
     setTelephone(' ')
-    setDestination(' ')
-    setCharterType(' ')
-    setBoatType(' ')
+    setDestination('country ')
+    setCharterType('charterType ')
+    setBoatType('boatType ')
     setAmount(' ')
     setEmail(' ')
   }

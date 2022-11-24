@@ -14,7 +14,7 @@ import { UserAuth } from '../context/AuthContext';
 
 function Info() {
 
-  const {bookings} = UserAuth()
+  const {bookings,deleteUser} = UserAuth()
 
   console.log(bookings)
 
@@ -92,10 +92,12 @@ function Info() {
                   </td>
                   <td className="py-4 px-6">{book.charterType}</td>
                   <td className="py-4 px-6">{book?.email}</td>
-                  <td className="py-4 px-6">{book?.phone}</td>
+                  <td className="py-4 px-6">{book?.telephone}</td>
                   <td className="py-4 px-6">
                    
-                      <button onClick={()=>{}} className="font-medium border-4 shadow-md rounded-md border-red-600 px-2 py-1.5 text-center">
+                      <button  onClick={() => {
+                deleteUser(book.id);
+              }} className="font-medium border-4 shadow-md rounded-md border-red-600 px-2 py-1.5 text-center">
                         Delete
                       </button>
                     
