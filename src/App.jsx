@@ -13,6 +13,7 @@ import Signup from "./components/Auth/Signup";
 import ProtectedRoute from "./components/Auth/ProtectedRoute";
 import Catamaran from "./pages/Catamarans";
 import Info from "./pages/Info";
+import Admin from "./admin";
 
 
 
@@ -24,7 +25,11 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Signup" element={<Signup />} />
         <Route exact path="/Signin" element={<Signin />} />
-        <Route path="/info" exact element={<Info />} />
+        <Route path="/info" exact element={
+          <Admin>
+            <Info />
+          </Admin>
+        } />
         <Route
           exact
           path="destination"
