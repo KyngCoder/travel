@@ -13,7 +13,7 @@ import Signup from "./components/Auth/Signup";
 import ProtectedRoute from "./components/Auth/ProtectedRoute";
 import Catamaran from "./pages/Catamarans";
 import Info from "./pages/Info";
-import Admin from "./admin";
+import Admin from "./components/Auth/Admin";
 
 
 
